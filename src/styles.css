@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  padding-top:80px;
+  height: 100vh;
+  
+}
+
+.app {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.header h1 {
+  color: #2d3748;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.header form {
+  display: flex;
+  gap: 10px;
+}
+
+.header input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  max-width: 800px;
+}
+
+.header input:focus {
+  border-color: #4a90e2;
+}
+
+.header button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.header button:hover {
+  background: #357ab7;
+}
+
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f7fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.todo-item span {
+  flex: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding-right: 10px;
+  max-width: 220px; 
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button {
+  border: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+.buttons button:nth-child(1) {
+  background: #48bb78;
+  color: white;
+}
+
+.buttons button:nth-child(2) {
+  background: #f6ad55;
+  color: white;
+}
+
+.buttons button:nth-child(3) {
+  background: #e53e3e;
+  color: white;
+}
+
+.todo-item input {
+  flex: 1;
+  padding: 5px;
+  border: 2px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: 100%;
+  }
+
+  .header form {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .header input {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons button {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .todo-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .todo-item span {
+    max-width: 100%;
+  }
+}
