@@ -42,5 +42,6 @@ npm run dev
 ```
 
 ## Output:
-
+![image](https://github.com/user-attachments/assets/609eded4-3fc4-4a8e-9339-b3f870b8047e)
+![image](https://github.com/user-attachments/assets/b9cf5794-8246-4d03-8eba-4ff629197c74)
 
